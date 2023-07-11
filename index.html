@@ -3,22 +3,22 @@
 Jajal code pembantu imacros
 </head>
 <body>
-<input id="input1"></input>
-  <input id="input2"></input>
-  <button id="button" onClick="proses()"/>Submit</button>
-<div id="hasil1">
-</div>
-  <div id="hasil2">
-    
-  </div>
-  <script>
-  function proses(){
-    var shopee = document.getElementbyID("input1").text
-    var tokped = document.getElementbyID("input2").text
-    if(shopee=="jalan"){
-      document.getElementbyID("hasil1").text = "Berhasil"
-    }
-  }
-  </script>
+<input type="text" id="input1">
+<input type="text" id="input2">
+<button type="button" onclick="proses()">Submit</button>
+<div id="hasil"></div>
+<script>
+function proses(){
+	var shopee = document.getElementById("input1").value
+  var tokped = document.getElementById("input2").value
+  if(shopee=="tersisa 0 buah"){
+     shopee = "";
+    }else{shopee = shopee;}
+  if(tokped=="Stok: Habis "){
+    tokped = "";
+  }else{tokped = tokped;}
+  document.getElementById("hasil").innerHTML = shopee+tokped;
+}
+</script>
 </body>
 </html>
