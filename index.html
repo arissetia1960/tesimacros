@@ -5,5 +5,20 @@ Jajal code pembantu imacros
 <body>
 <input id="input1"></input>
   <input id="input2"></input>
+  <button id="button" onClick="proses()"/>
+<div id="hasil1">
+</div>
+  <div id="hasil2">
+    
+  </div>
+  <script>
+  function proses(){
+    var shopee = document.getElementbyID("input1").text
+    var tokped = document.getElementbyID("input2").text
+    if(shopee=="jalan"){
+      document.getElementbyID("hasil1").text = "Berhasil"
+    }
+  }
+  </script>
 </body>
 </html>
