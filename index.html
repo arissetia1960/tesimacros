@@ -8,19 +8,24 @@
 <input type="text" id="input2">
 <button type="button" onclick="proses()">Submit</button>
 <div id="hasil"></div>
-	<div id="panggil"></div>
+<div id="panggil"></div>
 <script>
 function proses(){
 	var shopee = document.getElementById("input1").value
   var tokped = document.getElementById("input2").value
   if(shopee=="tersisa 0 buah"){
      shopee = "";
-    }else{shopee = "Stok shopee : " + shopee;}
+    }else{
+    shopee = "Stok shopee : " + shopee;
+    document.getElementById("panggil").innerHTML = "xpath=//i[@class='icon icon-phone']";
+    }
   if(tokped=="Stok: Habis "){
     tokped = "";
-  }else{tokped = "Stok tokped : " + tokped;}
+  }else{
+  tokped = "Stok tokped : " + tokped;
+  document.getElementById("panggil").innerHTML = "xpath=//i[@class='icon icon-phone']";
+  }
   document.getElementById("hasil").innerHTML = shopee + tokped;
-	document.getElementByID("panggil").innerHTML = "xpath=//i[@class='icon icon-phone']";
 }
 </script>
 </body>
