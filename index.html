@@ -8,6 +8,7 @@
 <input type="text" id="input2">
 <button type="button" onclick="proses()">Submit</button>
 <div id="hasil"></div>
+	<div id="panggil"></div>
 <script>
 function proses(){
 	var shopee = document.getElementById("input1").value
@@ -19,6 +20,7 @@ function proses(){
     tokped = "";
   }else{tokped = "Stok tokped : " + tokped;}
   document.getElementById("hasil").innerHTML = shopee + tokped;
+	document.getElementByID("panggil").innerHTML = "xpath=//i[@class='icon icon-phone']";
 }
 </script>
 </body>
