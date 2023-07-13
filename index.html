@@ -9,21 +9,28 @@
 <button type="button" onclick="proses()">Submit</button>
 <div id="hasil"></div>
 <div id="panggil"></div>
+<div id="kirim"></div>
 <script>
 function proses(){
 	var shopee = document.getElementById("input1").value
   var tokped = document.getElementById("input2").value
   if(shopee=="tersisa 0 buah"){
      shopee = "";
+	document.getElementById("panggil").innerHTML = "id=editable-message-text";
+	  document.getElementById("kirim").innerHTML = "id=editable-message-text";
     }else{
     shopee = "Stok shopee : " + shopee;
     document.getElementById("panggil").innerHTML = "xpath=//i[@class='icon icon-phone']";
+	document.getElementById("kirim").innerHTML = "css=#MiddleColumn > div.messages-layout > div.Transition > div > div.middle-column-footer > div.Composer.shown.mounted > button > i.icon.icon-send";
     }
   if(tokped=="Stok: Habis "){
     tokped = "";
+	  document.getElementById("panggil").innerHTML = "id=editable-message-text";
+	  document.getElementById("kirim").innerHTML = "id=editable-message-text";
   }else{
   tokped = "Stok tokped : " + tokped;
   document.getElementById("panggil").innerHTML = "xpath=//i[@class='icon icon-phone']";
+	  document.getElementById("kirim").innerHTML = "css=#MiddleColumn > div.messages-layout > div.Transition > div > div.middle-column-footer > div.Composer.shown.mounted > button > i.icon.icon-send";
   }
   document.getElementById("hasil").innerHTML = shopee + tokped;
 }
