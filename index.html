@@ -16,8 +16,8 @@ function proses(){
   var tokped = document.getElementById("input2").value
   if(shopee=="tersisa 0 buah"){
      shopee = "";
-	document.getElementById("panggil").innerHTML = "id=editable-message-text";
-	  document.getElementById("kirim").innerHTML = "id=editable-message-text";
+	document.getElementById("panggil").innerHTML = "css=#column-center > div > div > div.chat-input > div.chat-input-container > div.rows-wrapper-wrapper > div > div.new-message-wrapper > div.input-message-container > div:nth-child(1)";
+	  document.getElementById("kirim").innerHTML = "css=#column-center > div > div > div.chat-input > div.chat-input-container > div.rows-wrapper-wrapper > div > div.new-message-wrapper > div.input-message-container > div:nth-child(1)";
     }else{
     shopee = "Stok shopee : " + shopee;
     document.getElementById("panggil").innerHTML = "xpath=//i[@class='icon icon-phone']";
@@ -25,8 +25,8 @@ function proses(){
     }
   if(tokped=="Habis"){
     tokped = "";
-	  document.getElementById("panggil").innerHTML = "id=editable-message-text";
-	  document.getElementById("kirim").innerHTML = "id=editable-message-text";
+	  document.getElementById("panggil").innerHTML = "css=#column-center > div > div > div.chat-input > div.chat-input-container > div.rows-wrapper-wrapper > div > div.new-message-wrapper > div.input-message-container > div:nth-child(1)";
+	  document.getElementById("kirim").innerHTML = "css=#column-center > div > div > div.chat-input > div.chat-input-container > div.rows-wrapper-wrapper > div > div.new-message-wrapper > div.input-message-container > div:nth-child(1)";
   }else{
   tokped = "Stok tokped : " + tokped;
   document.getElementById("panggil").innerHTML = "xpath=//i[@class='icon icon-phone']";
