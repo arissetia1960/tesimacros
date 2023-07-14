@@ -20,7 +20,7 @@ function proses(){
 	  document.getElementById("kirim").innerHTML = "css=#column-center > div > div > div.chat-input > div.chat-input-container > div.rows-wrapper-wrapper > div > div.new-message-wrapper > div.input-message-container > div:nth-child(1)";
     }else{
     shopee = "Stok shopee : " + shopee;
-    document.getElementById("panggil").innerHTML = "xpath=//i[@class='icon icon-phone']";
+    document.getElementById("panggil").innerHTML = "xpath=//button[@class='btn-icon tgico-phone rp']";
 	document.getElementById("kirim").innerHTML = "css=#MiddleColumn > div.messages-layout > div.Transition > div > div.middle-column-footer > div.Composer.shown.mounted > button > i.icon.icon-send";
     }
   if(tokped=="Habis"){
@@ -29,7 +29,7 @@ function proses(){
 	  document.getElementById("kirim").innerHTML = "css=#column-center > div > div > div.chat-input > div.chat-input-container > div.rows-wrapper-wrapper > div > div.new-message-wrapper > div.input-message-container > div:nth-child(1)";
   }else{
   tokped = "Stok tokped : " + tokped;
-  document.getElementById("panggil").innerHTML = "xpath=//i[@class='icon icon-phone']";
+  document.getElementById("panggil").innerHTML = "xpath=//button[@class='btn-icon tgico-phone rp']";
 	  document.getElementById("kirim").innerHTML = "css=#MiddleColumn > div.messages-layout > div.Transition > div > div.middle-column-footer > div.Composer.shown.mounted > button > i.icon.icon-send";
   }
   document.getElementById("hasil").innerHTML = shopee + tokped;
